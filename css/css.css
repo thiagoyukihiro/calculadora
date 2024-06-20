@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calculadora_top {
+    width: 400px;
+    padding: 0.5em;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+#calculadora h4 {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: rgb(88, 88, 88);
+}
+
+#operação{
+    text-align: right;
+
+}
+
+#operações-previas {
+    color: #777;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+    font-size: 3em;
+
+}
+#operação-atual {
+   min-height: 1.6em; 
+   font-size: 3em;
+   font-weight: 700;
+   padding: 0.2;
+   overflow-wrap: break-word;
+}
+
+#botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    background-color: #c5c2c2;
+}
+
+#botoes button {
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+
+#botoes .numero {
+    background-color: #f3f3f3;
+}
+
+#botoes button:hover {
+    background-color: #bababa;
+    border-color: #999;
+}
+
+#botoes #igual {
+    grid-column: span 2;
+    background-color: #75a5cb;
+  }
+  
+#botoes #igual:hover {
+    grid-column: span 2;
+    background-color: #3a91d8;
+  }
